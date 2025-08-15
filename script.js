@@ -6,8 +6,8 @@ let sec = document.getElementById("sec");
 setInterval(() => {
     let currentTime = new Date();
 
-    hrs.innerHTML = currentTime.getHours() < 10 ? "0" : "" + currentTime.getHours();
+    hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
     // Adding leading zero for hours if less than 10
-    min.innerHTML = currentTime.getMinutes() < 10 ? "0" : "" + currentTime.getMinutes();
-    sec.innerHTML = currentTime.getSeconds() < 10 ? "0" : "" + currentTime.getSeconds();
+    min.innerHTML = (currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
+    sec.innerHTML = (currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSeconds();
 }, 1000)
